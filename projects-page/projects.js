@@ -57,18 +57,30 @@ function division(){
 function power(){
 
     let firstNum = document.getElementById("first-number").value;
-    firstNum= Number(firstNum);
+    firstNum = Number(firstNum);
 
     let secondNum = document.getElementById("second-number").value;
-    secondNum= Number(secondNum);
+    secondNum = Number(secondNum);
 
     let result = 1;
 
-    for (let i = 1; i <= secondNum; i++) {
-        result = firstNum * result;
-    }
+    if (secondNum > 0){
 
-    checkNumber(result);
+        for (let i = 1; i <= secondNum; i++) {
+            result = firstNum * result;
+        }
+
+        checkNumber(result);
+
+    } else {
+
+        for (let i = -1; i >= secondNum; i--) {
+            result = result / firstNum;
+        }
+
+        checkNumber(result);
+
+    }
 
 }
 
