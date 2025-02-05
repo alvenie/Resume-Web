@@ -3,6 +3,9 @@
     box-sizing: border-box;
 }
 
+/*
+Universal design
+ */
 #page-wrapper{
     width: 80vw;
     margin: 0 auto;
@@ -87,3 +90,7 @@ footer{
         text-decoration: none;
     }
 }
+
+/*
+Page specific
+ */

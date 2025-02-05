@@ -6,7 +6,9 @@ function addition(){
     let secondNum = document.getElementById("second-number").value;
     secondNum= Number(secondNum);
 
-    document.getElementById("output").innerHTML = String(firstNum + secondNum);
+    let result = firstNum + secondNum;
+
+    checkNumber(result);
 
 }
 
@@ -18,7 +20,9 @@ function subtract(){
     let secondNum = document.getElementById("second-number").value;
     secondNum= Number(secondNum);
 
-    document.getElementById("output").innerHTML = String(firstNum - secondNum);
+    let result = firstNum - secondNum;
+
+    checkNumber(result);
 
 }
 
@@ -30,7 +34,9 @@ function multiplication(){
     let secondNum = document.getElementById("second-number").value;
     secondNum= Number(secondNum);
 
-    document.getElementById("output").innerHTML = String(firstNum * secondNum);
+    let result = firstNum * secondNum;
+
+    checkNumber(result);
 
 }
 
@@ -42,7 +48,9 @@ function division(){
     let secondNum = document.getElementById("second-number").value;
     secondNum= Number(secondNum);
 
-    document.getElementById("output").innerHTML = String(firstNum / secondNum);
+    let result = firstNum / secondNum;
+
+    checkNumber(result);
 
 }
 
@@ -54,13 +62,13 @@ function power(){
     let secondNum = document.getElementById("second-number").value;
     secondNum= Number(secondNum);
 
-    let start = 1;
+    let result = 1;
 
     for (let i = 1; i <= secondNum; i++) {
-        start = firstNum * start;
+        result = firstNum * result;
     }
 
-    document.getElementById("output").innerHTML = String(start);
+    checkNumber(result);
 
 }
 
@@ -68,4 +76,16 @@ function clearOutput(){
 
     document.getElementById("output").innerHTML = "";
 
+}
+
+function checkNumber(result){
+
+    const outputElem = document.getElementById("output");
+    outputElem.innerHTML = String(result);
+
+    if (result < 0){
+        outputElem.style.color = "red";
+    } else {
+        outputElem.style.color = "black";
+    }
 }
