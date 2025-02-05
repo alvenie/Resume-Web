@@ -39,7 +39,7 @@ nav li{
     font-size: calc(3px + 3vw);
     width: 90%;
     padding: 2vh 2vw;
-    margin: 4vh 1vw;
+    margin: 2.5vh 1vw;
     background-color: gold;
 }
 nav a{
