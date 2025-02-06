@@ -54,6 +54,33 @@ footer{
     padding: .5vw;
 }
 
+h3{
+    font-size: calc(10px + 2vw);
+    text-align: center;
+    color: crimson;
+}
+
+#main-content{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#picture {
+    max-width: 50%;
+}
+
+#main-text{
+    font-size: calc(2px + 2vw);
+    padding: 2vh 2vw;
+}
+
+#sub-text{
+    font-size: calc(2px + 2vw);
+    padding: 2vh 2vw;
+    list-style: none;
+    margin: 2.5vh 1vw;
+}
 /* media query */
 @media screen and (max-width: 750px){
 
