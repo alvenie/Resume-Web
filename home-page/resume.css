@@ -12,7 +12,7 @@ header{
     display: flex;
     flex-direction: column;
     padding: 1vh 1vw;
-    background-color: midnightblue;
+    background-color: cadetblue;
     color: beige;
     font-size: 1vw;
 }
@@ -32,7 +32,7 @@ nav ul{
     text-align: center;
     list-style: none;
     padding-left: 0;
-    background-color: crimson ;
+    background-color: cadetblue;
 }
 
 nav li{
@@ -40,7 +40,7 @@ nav li{
     width: 90%;
     padding: 2vh 2vw;
     margin: 2.5vh 1vw;
-    background-color: gold;
+    background-color: azure;
 }
 nav a{
     text-decoration: none;
@@ -83,7 +83,7 @@ footer{
 
     header{
         align-items: center;
-        background-color: midnightblue;
+        background-color: cadetblue;
         color: beige;
     }
 
