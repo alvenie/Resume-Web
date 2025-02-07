@@ -1,3 +1,6 @@
+/*
+Addition function of the calculator
+ */
 function addition(){
 
     let firstNum = document.getElementById("first-number").value;
@@ -12,6 +15,9 @@ function addition(){
 
 }
 
+/*
+Subtraction function of the calculator
+ */
 function subtract(){
 
     let firstNum = document.getElementById("first-number").value;
@@ -26,6 +32,9 @@ function subtract(){
 
 }
 
+/*
+Multiplication function of the calculator
+ */
 function multiplication(){
 
     let firstNum = document.getElementById("first-number").value;
@@ -40,6 +49,9 @@ function multiplication(){
 
 }
 
+/*
+Division function of the calculator
+ */
 function division(){
 
     let firstNum = document.getElementById("first-number").value;
@@ -54,6 +66,9 @@ function division(){
 
 }
 
+/*
+Power function of the calculator. Deals with negative powers as well. Calls the helper function checkNumber().
+ */
 function power(){
 
     let firstNum = document.getElementById("first-number").value;
@@ -84,12 +99,21 @@ function power(){
 
 }
 
+/*
+Function to clear the output as well as the input boxes when the clear button is clicked.
+ */
 function clearOutput(){
 
-    document.getElementById("output").innerHTML = "";
+    document.getElementById("output").innerHTML = "Result";
+    document.getElementById("first-number").value = "";
+    document.getElementById("second-number").value = "";
 
 }
 
+/*
+Helper function to check whether the result is a negative or not.
+Changes to color of the output to red if it is and black otherwise.
+ */
 function checkNumber(result){
 
     const outputElem = document.getElementById("output");
