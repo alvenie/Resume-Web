@@ -1,14 +1,18 @@
-*{
+/* Reset default margins and set box-sizing */
+* {
     margin: 0;
     box-sizing: border-box;
 }
 
-#page-wrapper{
+/* Universal design */
+/* Set the main content width and center it */
+#page-wrapper {
     width: 80vw;
     margin: 0 auto;
 }
 
-header{
+/* Header styles */
+header {
     display: flex;
     flex-direction: column;
     padding: 1vh 1vw;
@@ -17,14 +21,16 @@ header{
     font-size: 1vw;
 }
 
-#contents{
+/* Main content container */
+#contents {
     width: 100%;
     display: flex;
     flex-direction: row;
     background-color: azure;
 }
 
-nav ul{
+/* Navigation styles */
+nav ul {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -35,16 +41,68 @@ nav ul{
     background-color: cadetblue;
 }
 
-nav li{
+nav li {
     font-size: calc(3px + 3vw);
     width: 90%;
     padding: 2vh 2vw;
     margin: 2.5vh 1vw;
     background-color: azure;
 }
-nav a{
+
+nav a {
     text-decoration: none;
 }
+
+/* Footer styles */
+footer {
+    background-color: cadetblue;
+    padding: .5vw;
+}
+
+/* Media query for screens smaller than 750px */
+@media screen and (max-width: 750px) {
+    /* Adjust header for smaller screens */
+    header {
+        align-items: center;
+        background-color: cadetblue;
+        color: beige;
+    }
+
+    /* Change main content to column layout */
+    #contents {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: azure;
+    }
+
+    /* Adjust navigation for smaller screens */
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        list-style: none;
+        padding-left: 0;
+        background-color: cadetblue;
+    }
+
+    nav li {
+        font-size: calc(1px + 2vw);
+        width: 90%;
+        padding: 1vh .5vw;
+        margin: 1vh .5vw;
+        background-color: azure;
+    }
+
+    nav a {
+        text-decoration: none;
+    }
+}
+
+
+/*
+Page specific
+ */
 
 #main-title{
     font-size: calc(10px + 2vw);
@@ -71,46 +129,4 @@ nav a{
 
 #profile {
     max-width: 25%;
-}
-
-footer{
-    background-color: cadetblue;
-    padding: .5vw;
-}
-
-/* media query */
-@media screen and (max-width: 750px){
-
-    header{
-        align-items: center;
-        background-color: cadetblue;
-        color: beige;
-    }
-
-    #contents{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        background-color: azure;
-    }
-
-    nav ul{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        list-style: none;
-        padding-left: 0;
-        background-color: crimson ;
-    }
-
-    nav li{
-        font-size: calc(1px + 2vw);
-        width: 90%;
-        padding: 1vh .5vw;
-        margin: 1vh .5vw;
-        background-color: gold;
-    }
-    nav a{
-        text-decoration: none;
-    }
 }
