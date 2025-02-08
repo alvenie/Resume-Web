@@ -121,20 +121,23 @@ Page specific
 #output{
     font-size: calc(2px + 2vw);
     text-align: center;
-    background-color: cadetblue;
+    background-color: white;
     border: 1px solid black;
+    font-family: "Comic Sans MS", cursive;
 }
 
 #calc-input label{
     display: inline-block;
     width: fit-content;
     text-align: center;
+    font-family: "Comic Sans MS", cursive;
 }
 
 #calc-input label input{
     display: block;
-    font-size: calc(2px + 2vw);
+    font-size: calc(1px + 2vw);
     text-align: center;
+    font-family: "Comic Sans MS", cursive;
 }
 
 .main-heading{
@@ -150,10 +153,11 @@ Page specific
 }
 
 #calc-buttons button{
-    font-size: calc(2px + 2vw);
+    font-size: calc(1px + 2vw);
     color: azure;
     background-color: cadetblue;
     border: 1px solid black;
+    font-family: "Comic Sans MS", cursive;
 }
 
 #sub-title{
